@@ -29,9 +29,8 @@ async def main():
             get_crypto_price(session, "SOL"),
             get_crypto_price(session, "ADA"),
             get_crypto_price(session, "DOT"),
-            get_crypto_price(session, "BUSD")
         )
-        crypto_prices = dict(zip(["BTC", "ETH", "SOL", "ADA", "DOT", "BUSD"], crypto_prices))
+        crypto_prices = dict(zip(["BTC", "ETH", "BNB", "SOL", "ADA", "DOT"], crypto_prices))
         cryptos = {'time': datetime.now().strftime("%H:%M:%S")}
         for crypto in crypto_prices:
             cryptos[f'{crypto}'] = crypto_prices[crypto]['price']
@@ -42,3 +41,4 @@ async def main():
         await main()
 
 asyncio.run(main())
+
