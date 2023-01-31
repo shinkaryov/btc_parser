@@ -15,7 +15,7 @@ async def get_crypto_price(session, crypto):
 
 
 async def main():
-    fieldnames = ["time", "BTC", "ETH", "BNB", "SOL", "ADA", "DOT", "BUSD"]
+    fieldnames = ["time", "BTC", "ETH", "BNB", "SOL", "ADA", "DOT"]
     if not os.path.isfile("crypto_prices.csv"):
         with open("crypto_prices.csv", "w", newline="") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
