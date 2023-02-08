@@ -1,4 +1,4 @@
-# btc_parser
+# Crypto parser and Polkadot predictor
 Here I wrote crypto price parser using asycnio and a model which can predict future movements
 
 Project is not finished yet, there are ways how I will improve it:
